@@ -5,13 +5,15 @@ import java.util.NoSuchElementException;
 public class Main {
 	public static void main(String[] args) {
 		FScanner sc = new FScanner();
-		int m = sc.nextInt();
-		int h = sc.nextInt();
+		String slot = sc.next();
+		char c1 = slot.charAt(0);
+		char c2 = slot.charAt(1);
+		char c3 = slot.charAt(2);
 
-		if (h % m == 0) {
-			System.out.println("Yes");
+		if (c1 == c2 && c1 == c3) {
+			System.out.println("Won");
 		} else {
-			System.out.println("No");
+			System.out.println("Lost");
 		}
 	}
 }
